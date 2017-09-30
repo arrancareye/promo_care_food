@@ -293,3 +293,100 @@
         margin-top: 0;
     }
 }
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 5000px;
+    }
+  }
+  @-moz-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 5000px;
+    }
+  }
+  @-o-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 5000px;
+    }
+  }
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 5000px;
+    }
+  }
+  @-webkit-keyframes bg-scrolling {
+    0% {
+      background-position: 0px 5000px;
+    }
+  }
+  @-moz-keyframes bg-scrolling {
+    0% {
+      background-position: 0px 5000px;
+    }
+  }
+  @-o-keyframes bg-scrolling {
+    0% {
+      background-position: 0px 5000px;
+    }
+  }
+  @keyframes bg-scrolling {
+    0% {
+      background-position: 0px 5000px;
+    }
+  }
+  /* Main styles */
+  body {
+    background:  url(images/icon/testimonial.png) repeat;    
+    /* img size is 50x50 */
+     -webkit-animation: bg-scrolling-reverse 150s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse 150s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse 150s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse 150s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+  
+  /* animation code */
+
+  .cart{
+    animation: wave;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  .cart:after{
+    animation: rotate; 
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes wave {
+    0% {
+        transform: translate3d(0, -(2%), 0);
+    }
+    50% {
+        transform: translate3d(0, 2%, 0);
+    }
+    100% {
+        transform: translate3d(0, -(2%), 0);
+    }
+}
+
+@keyframes rotate { 
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-(3deg)); } 
+    50% { transform: rotate(-0deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
