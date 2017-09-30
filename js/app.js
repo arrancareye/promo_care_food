@@ -24,4 +24,18 @@ window.onload = function() {
         let textarea = document.querySelector('.textarea');
         textarea.classList.add('boxed');
     }, 5000);
+    let a = document.querySelector('.cart');
+    let b = document.querySelector('.top__right');
+    let sn = b.firstChild.nextSibling.nextSibling;
+    let c = document.querySelector('.top__left');
+    if(window.innerWidth<480) {
+        b.insertBefore(a, sn);
+    }
+    window.addEventListener('resize', function(){
+        if(window.innerWidth<480) {
+            b.insertBefore(a, sn);
+        } else {
+            c.appendChild(a);
+        }
+    });
 };

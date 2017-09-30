@@ -49,13 +49,13 @@
 body {
   background:  url(../images/icon/set.png) repeat;    
   /* img size is 50x50 */
-   -webkit-animation: bg-scrolling-reverse 20s infinite;
+   -webkit-animation: bg-scrolling-reverse 50s infinite;
   /* Safari 4+ */
-  -moz-animation: bg-scrolling-reverse 20s infinite;
+  -moz-animation: bg-scrolling-reverse 50s infinite;
   /* Fx 5+ */
-  -o-animation: bg-scrolling-reverse 20s infinite;
+  -o-animation: bg-scrolling-reverse 50s infinite;
   /* Opera 12+ */
-  animation: bg-scrolling-reverse 20s infinite;
+  animation: bg-scrolling-reverse 50s infinite;
   /* IE 10+ */
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
@@ -75,8 +75,9 @@ body {
     width: 100%;
     margin: 0 auto;
     min-height: 2048px;
-    background: url(../images/slides/background2.png) no-repeat, url(../images/slides/background1.png) no-repeat bottom left;
-    /* background: url(../images/slides/background2.png) -143px -171px no-repeat, url(../images/slides/background1.png) no-repeat bottom left; */
+    background: url(../images/slides/backgroundlines.png) no-repeat;
+    /* background: url(../images/slides/background2.png) no-repeat, url(../images/slides/background1.png) no-repeat bottom left;    */
+     /* background: url(../images/slides/background2.png) -143px -171px no-repeat, url(../images/slides/background1.png) no-repeat bottom left; */
 }
 
 .first{
@@ -140,9 +141,9 @@ body {
 }
 
 .cartdiv{
-    width: 300px;
+    width: 100%;
     height: auto;
-    top: 300px;
+    top: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -164,13 +165,14 @@ body {
 }
 
 .subimg1{
-    left: -10px;
-    top: 150px;
+    left: -35px;
+    top: 170px !important;
 }
 
 .subimg2{
-    left: 10px;
-    top: 250px;
+    left: -46px;
+    top: 398px;
+    width: 550px !important;
 }
 
 
@@ -195,7 +197,6 @@ body {
 }
 
 .kvz{
-    margin-left: -25px;
     font-size: 48px; 
     font-weight: 400;
     font-family: 'Roboto Mono', monospace;
@@ -232,4 +233,52 @@ body {
 
 .boxed{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .site-wrapper {
+        background-size: 95% 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .site-wrapper {
+        background-size: 80% 100%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .site-wrapper {
+        background-size: 80% 100%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .site-wrapper {
+        background-size: 80% 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 940px) {
+    body{
+       
+    }
+    .first{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-wrapper {
+        background-size: 50% 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .second{
+        display: flex;
+        flex-direction: column; 
+    }
+
 }
