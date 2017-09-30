@@ -229,6 +229,7 @@ body {
     margin-top: 80px;
     padding: 55px;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .boxed{
