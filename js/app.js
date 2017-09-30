@@ -1,5 +1,16 @@
 'use strict';
 window.onload = function() {
+    let iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;    
+    if(iOS) {
+        let bh = document.querySelector('body');
+        let hb = document.querySelector('html');
+        hb.classList.add('hide');
+        bh.classList.add('hide');
+        let wr = document.querySelector('.wrapper');
+        wr.classList.add('hide');
+    } else {
+        console.log(navigator.userAgent);
+    }
     console.log('DOM IS READY...');
     // INITIALIZE SMOOTH SCROLL
     let scroll = new SmoothScroll('a[href*="#"]', {
