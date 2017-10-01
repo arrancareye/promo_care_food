@@ -20,7 +20,7 @@
 
 @media (min-width: 800px) and (max-width: 1440px) {
     .wrapper{
-        background-size: 70% 100%;
+        background-size: 80% 100%;
     }
     
 }
@@ -89,10 +89,12 @@
 
 .bottom__left {
     width: 50%;
+    margin-top: 110px; 
 }
 
 .bottom__right{
     width: 50%;
+    margin-top: 80px;
 }
 
 .clr1{
@@ -111,11 +113,15 @@
     font-size: 28px;
 }
 
+.contacts{
+    display: none;
+}
+
 .phone{
     font-size: 24px;
 }
 .infodiv > button {
-    width: 250px;
+    /* width: 250px; */
     height: 70px;
     border: none;
     color: white;
@@ -236,6 +242,25 @@
 }
 
 @media (max-width: 480px) {
+    .contacts{
+        display: block;
+        text-align: center;
+    }
+    .contacts div{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #FF8100;
+    }
+    .contacts div i {
+        display: inline;
+        margin-right: 5px;
+        font-size: 24px;
+    }
+    .contacts div p{
+        display: inline;
+        font-family: 'PT Sans Narrow', sans-serif;  
+        font-size: 24px;
+    }
     .wrapper{
         background: none;
     }
@@ -275,6 +300,7 @@
         width: 125%;
         border-bottom: none;
         box-shadow: 0 9px 34px -6px #9a9090;
+        height: 110px;
     }
     .infodiv>button>a{
         font-size: 50px;
@@ -287,6 +313,7 @@
         width: 100%;
         overflow-y: initial;
         height: auto;
+        margin-top: 0px;
     }
     .textarea{
         height: auto;
