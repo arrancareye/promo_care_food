@@ -513,3 +513,8 @@
     width: 100%;
     margin-bottom: 20px;
 }
+
+.email > a, .phone > a {
+    text-decoration: none !important;
+    color: #fd8005 !important;
+}
