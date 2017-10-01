@@ -15,7 +15,7 @@
 <body id="fullpage">
     <div class="wrapper">
         <div class="container">
-            <div class="top">
+            <div class="top" id="head">
                 <div class="top__left">
                    <img src="images/slides/cart.png" alt="" class="cart">
                 </div>
@@ -27,16 +27,16 @@
                        <p class="phone clr2"><a href="tel:+7 727 228 14 96" class="clr2">+7 727 228 14 96</a></p>
                     </div>
                     <button>
-                        <a data-scroll href="#promo">Условия розыгрыша</a>
+                        <a data-scroll href="#promo" class="gamecond">Условия розыгрыша</a>
                     </button>
                 </div>
             </div>
-            <div class="bottom " id="promo">
+            <div class="bottom ">
                 <div class="bottom__left">
                     <p class="kvz">«КВАРТИРНАЯ ЗАКУПКА»</p>
-                    <p class="conds">Условия <br/> розыгрыша</p>
+                    <p class="conds">Условия <br/> <span class="game">розыгрыша</span></p>
                 </div>
-                <div class="bottom__right">
+                <div class="bottom__right" id="promo">
                     <div class="textarea boxed">
                         <div>
                         <div><strong>&laquo;КВАРТИРНАЯ ЗАКУПКА&raquo;</strong></div>
@@ -159,6 +159,7 @@
                         <div>6.12. Организатор выносит решение относительно претензий Участников не позднее 15 календарных дней от даты получения таковых.</div>
                         <p>&nbsp;</p>
                     </div>
+                    <span class="backbutton"><a data-scroll href="#head">Вернуться</a></span>
                     <div class="contacts">
                         <div>
                             <i class="fa fa-phone-square"></i><a href="tel:+7 727 228 14 96">+7 727 228 14 96</a>

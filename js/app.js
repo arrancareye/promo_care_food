@@ -13,11 +13,10 @@ window.onload = function() {
     }
     console.log('DOM IS READY...');
     // INITIALIZE SMOOTH SCROLL
-    let scroll = new SmoothScroll('a[href*="#"]', {
+    let scroll = new SmoothScroll('a', {
         // Selectors
         ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
         header: null, // Selector for fixed headers (must be a valid CSS selector)
-    
         // Speed & Easing
         speed: 700, // Integer. How fast to complete the scroll in milliseconds
         offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
@@ -27,8 +26,6 @@ window.onload = function() {
         // Callback API
         before: function () {}, // Callback to run before scroll
         after: function () {
-            let textarea = document.querySelector('.textarea');
-            textarea.classList.add('boxed');
         } // Callback to run after scroll
     });
     setTimeout(() => {
@@ -49,4 +46,15 @@ window.onload = function() {
             c.appendChild(a);
         }
     });
+    let gamecond = document.querySelector('.gamecond');
+    let backbutton = document.querySelector('.backbutton');   
+    console.log(backbutton); 
+    gamecond.addEventListener('click', () => {
+        backbutton.style.opacity = 1;
+        backbutton.style.top = 90 + '%';
+    });
+    backbutton.addEventListener('click', (e) => {
+        backbutton.style.opacity = 0;
+        backbutton.style.top = 100 + '%';
+    })
 };
