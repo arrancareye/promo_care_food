@@ -102,7 +102,7 @@
 }
 
 .clr2{
-    color: #fd8005;
+    color: #fd8005 !important;
 }
 
 .support{
@@ -174,7 +174,7 @@
 
 .textarea{
     font-family: 'PT Sans Narrow', sans-serif;   
-    position: relative;
+    /* position: relative; */
     z-index: -1;
     height: 700px;
     background: white;
@@ -184,6 +184,16 @@
     padding: 20px;
     padding-top: 45px;
     overflow-y: scroll;
+}
+
+@media (min-width: 480px) and (max-width: 812px) {
+    .kvz{
+        font-size: 28px !important;
+    } 
+    .conds{
+        font-size: 22px !important;
+    }
+
 }
 
 @media (min-width: 480px) and (max-width: 1090px) {
@@ -256,10 +266,12 @@
         margin-right: 5px;
         font-size: 24px;
     }
-    .contacts div p{
+    .contacts div a{
         display: inline;
         font-family: 'PT Sans Narrow', sans-serif;  
         font-size: 24px;
+        text-decoration: none;
+        color: #FF8100;
     }
     .wrapper{
         background: none;
@@ -311,7 +323,7 @@
     }
     .bottom__right{
         width: 100%;
-        overflow-y: initial;
+        /* overflow-y: initial; */
         height: auto;
         margin-top: 0px;
     }
