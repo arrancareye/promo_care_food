@@ -167,6 +167,7 @@
 }
 
 .textarea{
+    font-family: 'PT Sans Narrow', sans-serif;   
     position: relative;
     z-index: -1;
     height: 700px;
@@ -175,7 +176,7 @@
     float: right;
     margin-top: 80px;
     padding: 20px;
-    padding-top: 25px;
+    padding-top: 45px;
     overflow-y: scroll;
 }
 
@@ -390,4 +391,9 @@
     50% { transform: rotate(-0deg); }
     75% { transform: rotate(9deg); }
     100% { transform: rotate(0deg); }
+}
+
+.textarea img {
+    width: 100%;
+    margin-bottom: 20px;
 }
