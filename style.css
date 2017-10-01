@@ -192,14 +192,16 @@
 .kvz{
     font-size: 44px; 
     font-weight: 400;
-    font-family: 'Roboto Mono', monospace;
-    
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: Helvetica;
+    font-weight: lighter;
 }
 
 .conds{
-    font-size: 56px;
+    font-size: 66px;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;   
+    /* font-family: 'Open Sans', sans-serif;    */
+    font-family: 'Yanone Kaffeesatz', sans-serif;    
     line-height: 0.8; 
 }
 
