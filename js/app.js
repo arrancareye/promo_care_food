@@ -1,6 +1,9 @@
 'use strict';
-window.onload = function() {
+window.onload = function(event) {
+    window.location.hash = "#head";
+    setTimeout(()=>{document.body.scrollTop = document.documentElement.scrollTop = 0;    }, 5);
     let iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;    
+    this.scroll(0, 50);
     if(iOS) {
         let bh = document.querySelector('body');
         let hb = document.querySelector('html');
